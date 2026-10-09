@@ -1,0 +1,10 @@
+const toggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('#navigation');
+toggle.addEventListener('click', () => {const open = toggle.getAttribute('aria-expanded') !== 'true'; toggle.setAttribute('aria-expanded', String(open)); nav.classList.toggle('open', open);});
+nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {nav.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false');}));
+document.querySelector('#year').textContent = new Date().getFullYear();
+const lightbox = document.querySelector('#lightbox');
+document.querySelectorAll('[data-image]').forEach(button => button.addEventListener('click', () => {const image = lightbox.querySelector('img'); image.src = button.dataset.image; image.alt = button.querySelector('img').alt; lightbox.showModal();}));
+lightbox.querySelector('.close').addEventListener('click', () => lightbox.close());
+lightbox.addEventListener('click', event => {if(event.target === lightbox) lightbox.close();});
+document.querySelectorAll('[data-service]').forEach(link => link.addEventListener('click', () => {document.querySelector('#chosen-service').textContent = 'Interested in ' + link.dataset.service + '? Mention it in your message below.';}));
