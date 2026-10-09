@@ -17,11 +17,8 @@ A complete responsive static website. No package installation, build step, or ba
 - Mobile navigation and accessible gallery lightbox.
 - Wayfinder Creative logo and linked footer credit.
 
-## Add Hallie's portrait
-Hallie Portrait.jpeg was not included among the files available for this build. The About section currently shows one of Hallie's arrangements, accurately labeled as an arrangement. To add her portrait:
-1. Save it as assets/hallie-portrait.jpeg.
-2. Find the comment “Add assets/hallie-portrait.jpeg” in index.html.
-3. Change the following image src to assets/hallie-portrait.jpeg and its alt text to “Hallie Williams, owner of The Garden Girl”.
+## Hallie's portrait
+The About section uses the supplied portrait at assets/hallie-portrait.jpeg.
 
 ## Photos
 All img_*.jpg photos are the supplied examples of Hallie's work. The general floral inspiration image is from Unsplash (https://unsplash.com/photos/88aa4486c946; image source https://images.unsplash.com/photo-1490750967868-88aa4486c946). It is labeled as inspiration and does not claim to show Hallie's flower-bar setup or artificial arrangements. There is no real flower-bar or artificial-arrangement photo supplied, so those services are presented with descriptive copy rather than mislabeled examples. Replace inspiration with actual service photography as it becomes available.
